@@ -4,10 +4,6 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.print.PageLayout;
-import javafx.scene.Group;
-import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -17,12 +13,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class LoginClicked implements EventHandler {
+public class SplashLoginClicked implements EventHandler {
     private Stage stage;
     private Scene scene;
     private GridPane root;
 
-    public LoginClicked(Stage s, Scene s2, GridPane g){
+    public SplashLoginClicked(Stage s, Scene s2, GridPane g){
         this.stage = s;
         this.scene = s2;
         this.root = g;
@@ -83,6 +79,7 @@ public class LoginClicked implements EventHandler {
 
         //Signup button
         Button signup = new Button("SIGNUP");
+        signup.setOnMouseClicked(new SplashSignupClicked(stage, scene, root));
 
         //forgot password
         Button fpass = new Button("FORGOT PASSWORD");

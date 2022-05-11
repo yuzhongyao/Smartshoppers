@@ -2,21 +2,17 @@ package com.example.smartshoppers;
 
 
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import mvc.LoginClicked;
+import mvc.SplashLoginClicked;
+import mvc.SplashSignupClicked;
 
 public class Main extends Application {
 
@@ -54,13 +50,14 @@ public class Main extends Application {
         login.setMinSize(150,100);
         Font font = new Font(50);
         login.setFont(font);
-        login.setOnMouseClicked(new LoginClicked(stage, scene, root){
+        login.setOnMouseClicked(new SplashLoginClicked(stage, scene, root){
                                 });
 
         //Signup button
         Button signup = new Button("SIGNUP");
         login.setMinSize(150,100);
         signup.setFont(font);
+        signup.setOnMouseClicked(new SplashSignupClicked(stage, scene, root));
 
         //hbox
         HBox h = new HBox();
