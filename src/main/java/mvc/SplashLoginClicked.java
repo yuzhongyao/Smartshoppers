@@ -82,9 +82,9 @@ public class SplashLoginClicked implements EventHandler {
         signup.setOnMouseClicked(new SplashSignupClicked(stage, scene, root));
 
         //forgot password
-        Button fpass = new Button("FORGOT PASSWORD");
+        //Button fpass = new Button("FORGOT PASSWORD");
 
-        buttons.getChildren().addAll(login, signup, fpass);
+        buttons.getChildren().addAll(login, signup);
         buttons.setAlignment(Pos.CENTER);
 
 
