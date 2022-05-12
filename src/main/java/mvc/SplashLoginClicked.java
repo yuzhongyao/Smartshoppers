@@ -34,7 +34,7 @@ public class SplashLoginClicked implements EventHandler {
 
         //create login page
         VBox v = new VBox();
-        v.setAlignment(Pos.CENTER);
+        //v.setAlignment(Pos.CENTER);
         v.setSpacing(10);
 
 

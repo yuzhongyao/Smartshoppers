@@ -37,6 +37,12 @@ public class SplashSignupClicked implements EventHandler {
         v.setSpacing(10);
 
         VBox v1 = new VBox();
+
+        //Signup text
+        Text s = new Text("SIGNUP");
+        s.setFont(Font.font("Verdana", 40));
+        v.getChildren().add(s);
+
         //first name
         Text first = new Text("First Name:");
         v1.getChildren().add(first);
