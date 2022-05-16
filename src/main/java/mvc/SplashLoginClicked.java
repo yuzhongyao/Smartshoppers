@@ -14,9 +14,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class SplashLoginClicked implements EventHandler {
-    private Stage stage;
-    private Scene scene;
-    private GridPane root;
+    private final Stage stage;
+    private final Scene scene;
+    private final GridPane root;
 
     public SplashLoginClicked(Stage s, Scene s2, GridPane g){
         this.stage = s;
