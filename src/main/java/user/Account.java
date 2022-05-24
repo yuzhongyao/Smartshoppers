@@ -8,4 +8,8 @@ public abstract class Account {
     private String password;
     private Store preferredStore;
 
+    public void changePreferredStore(Store s){
+        this.preferredStore = s;
+    }
+
 }
